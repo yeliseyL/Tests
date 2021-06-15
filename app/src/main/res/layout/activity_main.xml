@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -34,6 +35,19 @@
         android:layout_margin="@dimen/margin"
         app:layout_constraintTop_toBottomOf="@id/searchEditText"
         android:text="@string/to_details" />
+
+    <TextView
+        android:id="@+id/totalCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/results_count"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toDetailsActivityButton"
+        tools:text="Number of results: 100" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
