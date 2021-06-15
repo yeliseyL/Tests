@@ -1,10 +1,7 @@
 package com.geekbrains.tests
 
 import com.geekbrains.tests.presenter.details.DetailsPresenter
-import com.geekbrains.tests.presenter.search.SearchPresenter
-import com.geekbrains.tests.repository.GitHubRepository
 import com.geekbrains.tests.view.details.ViewDetailsContract
-import com.geekbrains.tests.view.search.ViewSearchContract
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
