@@ -56,6 +56,13 @@ android {
         real {
             java.srcDirs('src/real/java')
         }
+        androidTest {
+            java.srcDirs += "src/sharedTestData/java"
+        }
+        test {
+            java.srcDirs += "src/sharedTestData/java"
+        }
+
     }
 }
 

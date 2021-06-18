@@ -8,6 +8,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.runner.AndroidJUnit4
 import com.geekbrains.tests.R
+import com.geekbrains.tests.TEST_NUMBER_OF_RESULTS_PLUS_1
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -32,6 +33,6 @@ class MainActivityTest {
     fun mainActivityTest() {
         onView(withId(R.id.toDetailsActivityButton)).perform(click())
         onView(withId(R.id.incrementButton)).perform(click())
-        onView(withId(R.id.totalCountTextView)).check(matches(withText("Number of results: 1")))
+        onView(withId(R.id.totalCountTextView)).check(matches(withText(TEST_NUMBER_OF_RESULTS_PLUS_1)))
     }
 }
